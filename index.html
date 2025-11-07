@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
     <!-- FONT IMPORT -->
 
+    <script src="./scripts/open_menu.js"></script>
+
     
     <title>KEITHSTON</title>
 </head>
@@ -24,14 +26,25 @@
     <header>
         <img src="images/logo.jpg" alt="logo keithston" loading="lazy"/>
 
-        <div id="burger">
+        <div id="burger" onclick="open_menu()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
+        
     </header>
 
+    <nav class="hidden" id="menu">
+        <div id="nav_tri"></div>
+        <div id="nav_menu">
+            <a>Acceuil</a>
+            <a>Panier</a>
+            <a>Contact</a>
+        </div>
+    </nav>
+
     <section id="order">
+        
         <img src="./images/background.jpg" loading="lazy"/>
         <p>
             <span>Café Délicieux</span><br>

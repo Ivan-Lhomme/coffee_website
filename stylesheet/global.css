@@ -11,11 +11,21 @@ header > img{
     width: 11%;
     height: auto;
 }
+nav{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    z-index: 1;
+    font-size: 0.8rem;
+}
 
 /* class */
 .line{
     height: 2px;
     background-color: black;
+}
+.hidden{
+    display: none;
 }
 
 /* id */
@@ -26,6 +36,7 @@ header > img{
     width: 20px;
     height: 12px;
     margin: auto 0;
+    cursor: pointer;
 }
 #order > img{
     width: 100%;
@@ -59,4 +70,26 @@ header > img{
     top: 46%;
     padding: 4px 1px;
     margin-left: 6%;
+}
+#nav_tri{
+    width: 1em;
+    height: 1em;
+    background-color: lightgrey;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    margin: 0 auto;
+    position: absolute;
+    left: 1.2em;
+    top: -25%;
+}
+#nav_menu{
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 10%;
+    width: fit-content;
+    height: fit-content;
+    padding: 4%;
+    margin: 0 auto;
+}
+#nav_menu > a{
+    display: block;
 }
