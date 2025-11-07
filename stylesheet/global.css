@@ -1,0 +1,62 @@
+/* global */
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    gap: 50%;
+}
+header > img{
+    width: 11%;
+    height: auto;
+}
+
+/* class */
+.line{
+    height: 2px;
+    background-color: black;
+}
+
+/* id */
+#burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 12px;
+    margin: auto 0;
+}
+#order > img{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+#order > p{
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 130%;
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 23%;
+    margin-left: 6%;
+}
+#order > p > span{
+    font-family: "Inter", sans-serif !important;
+    font-size: 60% !important;
+    font-weight: 600;
+    color: #e9bd8c !important;
+
+}
+#order > button{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    background-color: #933c24;
+    position: absolute;
+    top: 46%;
+    padding: 4px 1px;
+    margin-left: 6%;
+}
