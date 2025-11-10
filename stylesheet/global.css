@@ -101,6 +101,12 @@ h1{
     margin: auto 0;
     cursor: pointer;
 }
+#order{
+    display: grid;
+}
+#order > *{
+    grid-area: 1 / 1;
+}
 #order > img{
     width: 100%;
     height: auto;
@@ -110,10 +116,8 @@ h1{
     font-family: "Sansita Swashed", system-ui;
     font-size: 130%;
     color: #ffffff;
-    margin: 0;
-    position: absolute;
-    top: 23%;
-    margin-left: 6%;
+    margin-top: 16.5%;
+    margin-left: 5.5%;
 }
 #order > p > span{
     font-family: "Inter", sans-serif !important;
@@ -129,10 +133,11 @@ h1{
     border-radius: 8px;
     border: 1px solid #000000;
     background-color: #933c24;
-    position: absolute;
-    top: 46%;
-    padding: 4px 1px;
-    margin-left: 6%;
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5% 0.5%;
+    margin-top: 45%;
+    margin-left: 5%;
 }
 #nav_tri{
     width: 1em;
