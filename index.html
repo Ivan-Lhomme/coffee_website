@@ -4,27 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet/global.css" rel="stylesheet"/>
+    <link href="stylesheet/global.css" rel="stylesheet">
 
     <!-- FONT IMPORT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
     <!-- FONT IMPORT -->
 
     <script src="./scripts/open_menu.js"></script>
 
     
-    <title>KEITHSTON</title>
+    <title>KEITHSTON - coffee shop</title>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.jpg" alt="logo keithston" loading="lazy"/>
+        <img src="images/logo.jpg" alt="logo keithston" loading="lazy">
 
         <div id="burger" onclick="open_menu()">
             <div class="line"></div>
@@ -43,17 +41,31 @@
         </div>
     </nav>
 
-    <section id="order">
+    <div id="order">
         
-        <img src="./images/background.jpg" loading="lazy"/>
+        <img src="./images/background.jpg" alt="background" loading="lazy">
         <p>
             <span>Café Délicieux</span><br>
             Douceurs &<br>
             Saveurs
         </p>
         <button>Commander</button>
-    </section>
+    </div>
 
+    <section id="product">
+        <h1>Nos Tops Produits</h1>
+
+        <div class="item">
+            <img src="./images/item_background.jpg" alt="item_background" class="item_background">
+            <img src="./images/pain_complet.png" alt="pain complet" class="item_img">
+
+            <div class="item_text">
+                <p class="item_price">40€</p>
+                <div class="info">i</div>
+                <p class="item_name">Pain complet</p>
+                <button class="add">Ajouter</button>
+            </div>
+        </div>
     </section>
     
 </body>

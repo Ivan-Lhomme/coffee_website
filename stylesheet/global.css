@@ -18,6 +18,13 @@ nav{
     z-index: 1;
     font-size: 0.8rem;
 }
+h1{
+    font-family: "Sansita Swashed", system-ui;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto 8% auto;
+    font-size: 6vw;
+}
 
 /* class */
 .line{
@@ -26,6 +33,62 @@ nav{
 }
 .hidden{
     display: none;
+}
+.item{
+    font-family: "Inter", sans-serif;
+    display: grid;
+}
+.item > *{
+    grid-area: 1 / 1;
+}
+.item_background{
+    width: 100%;
+    height: 16em;
+}
+.item_img{
+    width: 55%;
+    height: auto;
+    margin: 3% auto 0 auto;
+}
+.item_text{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    height: fit-content;
+    margin: 65% auto 0 auto;
+    color: white;
+}
+.item_price{
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.info{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    padding: 4% 11%;
+    margin: auto;
+    grid-column: 2;
+    font-size: 0.9em;
+}
+.item_name{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 0.8em;
+}
+.add{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #933c24;
+    border: #933c24 solid 1px;
+    border-radius: 4px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10% 12%;
+    margin: auto;
+    color: white;
 }
 
 /* id */
@@ -54,8 +117,8 @@ nav{
 }
 #order > p > span{
     font-family: "Inter", sans-serif !important;
-    font-size: 60% !important;
     font-weight: 600;
+    font-size: 60% !important;
     color: #e9bd8c !important;
 
 }
@@ -92,4 +155,10 @@ nav{
 }
 #nav_menu > a{
     display: block;
+}
+#product{
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
 }
