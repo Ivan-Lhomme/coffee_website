@@ -12,9 +12,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- FONT IMPORT -->
 
     <script src="./scripts/open_menu.js"></script>
+    <script src="./scripts/discover_switch.js"></script>
 
     
     <title>KEITHSTON - coffee shop</title>
@@ -133,6 +135,41 @@
         <p id="discount">20% de Réduction sur la première commande</p>
         <p id="more_info">Profitez de cette offre pour découvrir nos plus beaux délices !</p>
         <button>En savoir plus</button>
+    </section>
+
+    <section id="discover">
+        <h1>Découvrir</h1>
+
+        <div id="switch">
+            <div id="g">
+                <p onclick="discover_switch('g')">Gâteaux</p>
+                <div></div>
+            </div>
+            
+            <div id="m">
+                <p onclick="discover_switch('m')">Muffins</p>
+                <div hidden></div>
+            </div>
+            
+            <div id="c">
+                <p onclick="discover_switch('c')">Croissant</p>
+                <div hidden></div>
+            </div>
+            
+            <div id="p">
+                <p onclick="discover_switch('p')">Pains</p>
+                <div hidden></div>
+            </div>
+        </div>
+
+        <div id="g_img">
+            <img src="./images/gateau_1.jpg" alt="gateau">
+            <img src="./images/gateau_2.jpg" alt="gateau">
+            <img src="./images/gateau_3.jpg" alt="gateau">
+            <img src="./images/gateau_4.jpg" alt="gateau">
+            <img src="./images/gateau_5.jpg" alt="gateau">
+            <img src="./images/gateau_6.jpg" alt="gateau">
+        </div>
     </section>
 </body>
 </html>
