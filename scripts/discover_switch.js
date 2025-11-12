@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const switchIdList = ['g', 'm', 'c', 'p'];
+    const switchIdList = ['g', 'm', 'c', 'p', 't'];
 
     window.discover_switch = function(id) {
         if (document.querySelector(`#${id} div`).hasAttribute("hidden")) {
