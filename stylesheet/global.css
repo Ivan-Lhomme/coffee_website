@@ -13,8 +13,8 @@ header > img{
 }
 nav{
     position: absolute;
-    right: 5%;
-    top: 10%;
+    right: 5.02vw;
+    top: 11.95vw;
     z-index: 1;
     font-size: 0.8rem;
 }
@@ -35,6 +35,7 @@ footer{
     display: grid;
     grid-template-rows: repeat(4, 1fr) 0.25fr;
     grid-template-columns: 1fr;
+    row-gap: 1%;
     background-image: url("../images/background_footer.jpg");
     background-size: cover;
 }
@@ -56,13 +57,13 @@ footer > div{
 footer > div > h2{
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 10vw;
+    font-size: 6vw;
     color: #e9bd8c;
 }
 footer > div > p{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 4vw;
     color: white;
     line-height: 2;
 }
@@ -146,8 +147,8 @@ footer > div > p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 20px;
-    height: 12px;
+    width: 6.25vw;
+    height: 3.75vw;
     margin: auto 0;
     cursor: pointer;
 }
@@ -371,7 +372,7 @@ footer > div > p{
 #little_pleasur > div > div > p{
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 #logos{
     grid-column: 1;
@@ -386,25 +387,25 @@ footer > div > p{
     margin: 0 auto;
 }
 #logos > img{
-    width: 30vw;
+    width: 25vw;
     height: auto;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
 }
 #logos > p{
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 5vw;
     color: #e9bd8c;
 }
 #logos > div{
-    margin-top: 4%;
-    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
     display: flex;
     justify-content: space-evenly;
     width: 90%;
 }
-#logos > div > img{
-    width: 12vw;
+#logos > div > a > img{
+    width: 9vw;
     height: auto;
 }
 #f_about{
