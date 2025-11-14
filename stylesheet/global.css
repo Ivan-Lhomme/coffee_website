@@ -1,29 +1,512 @@
-/* global */
+@media screen and (max-width: 575px) {
+    /* ------------------------------global------------------------------ */
+    h2{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 6vw;
+    }
+
+    /* ------------------------------header------------------------------ */
+    /* top */
+    #top{
+        gap: 60%;
+    }
+    #top > img{
+        width: 11vw;
+    }
+    #burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 6.25vw;
+        height: 3.75vw;
+        margin: auto 0;
+        cursor: pointer;
+    }
+
+    /* order */
+    #order > p{
+        font-size: 6.5vw;
+    }
+    #order > p > span{
+        font-size: 3.5vw;
+    }
+    #order > button{
+        font-size: 4vw;
+        border-radius: 8px;
+        padding: 1.5% 0.5%;
+        margin-top: 45%;
+        margin-left: 5%;
+    }
+
+    /* ------------------------------navigatio menu------------------------------ */
+    nav{
+        background-color: lightgrey;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.52vw;
+        margin: 0 auto;
+
+        position: absolute;
+        right: 4.4vw;
+        top: 11.95vw;
+        z-index: 1;
+        font-size: 0.8rem;
+    }
+    nav > a{
+        display: block;
+        font-size: 4vw;
+    }
+
+    /* ------------------------------tops products------------------------------ */
+    .item_text{
+        height: 25vw;
+        margin-top: 70%;
+    }
+    .item_text > img{
+        width: 8vw;
+    }
+    .item_price{
+        font-size: 4vw;
+    }
+    .item_name{
+        font-size: 4vw;
+    }
+    .add{
+        font-size: 4vw;
+        border-radius: 4px;
+        padding: 10% 12%;
+    }
+    #product{
+        margin-top: 8%;
+    }
+
+    /* ------------------------------event------------------------------ */
+    #event > img{
+        width: 300%;
+        margin-left: -90%;
+    }
+    #event > h2{
+        margin: 20% auto 0 auto;
+    }
+    #event > p{
+        font-size: 4vw;
+        margin: 51.5% auto 0 auto;
+        width: 75%;
+    }
+    #event > button{
+        padding: 3.5% 7%;
+        font-size: 3.5vw;
+        margin-top: 83%;
+    }
+
+    /* ------------------------------discover------------------------------ */
+    .switch_img{
+        width: 80%;
+    }
+    .switch_img > img{
+        width: 100%;
+        margin: 5% 0;
+    }
+    #switch{
+        gap: 8%;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    #switch::-webkit-scrollbar{
+        display: none;
+    }
+    #switch > div > p{
+        font-size: 4vw;
+    }
+    #switch > div > div{
+        height: 0.6vw;
+    }
+
+    /* ------------------------------about------------------------------ */
+    #about{
+        overflow: hidden;
+    }
+    #about > img{
+        width: 280%;
+        margin-left: -90%;
+    }
+    #about > h2{
+        font-size: 6vw;
+        margin: 10% auto 0 auto;
+    }
+    #about > p{
+        font-size: 4vw;
+        margin-top: 42%;
+        width: 75%;
+    }
+    #about > button{
+        padding: 3.5% 7%;
+        font-size: 3.5vw;
+        margin-top: 83%;
+        border-radius: 6px;
+    }
+
+    /* ------------------------------little pleasur------------------------------ */
+    #little_pleasur{
+        margin-top: 5%;
+    }
+    #little_pleasur > div > div > p{
+        font-size: 4vw;
+    }
+
+    /* ------------------------------footer------------------------------ */
+    footer > div > h2{
+        font-size: 6vw;
+    }
+
+    /* logos */
+    footer{
+        grid-template-rows: repeat(4, 1fr) 0.25fr;
+        grid-template-columns: 1fr;
+        row-gap: 1%;
+        background-size: cover;
+    }
+    #logos{
+        grid-column: 1;
+        flex-direction: column;
+        margin-top: 5%;
+        width: 95%;
+    }
+    #logos > *{
+        margin: 0 auto;
+    }
+    #logos > img{
+        width: 25vw;
+        margin-bottom: 4%;
+    }
+    #logos > p{
+        font-size: 5vw;
+    }
+    #logos > div{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        width: 90%;
+    }
+    #logos > div > a > img{
+        width: 9vw;
+    }
+
+    /* footer about */
+    #f_about{
+        grid-row: 2;
+    }
+
+    /* explor */
+    #explor{
+        grid-row: 3;
+    }
+
+    /* news */
+    #news{
+        grid-row: 4;
+    }
+    #news > div{
+        gap: 10%;
+        margin: 0 auto 8% auto;
+        width: 100%;
+        align-items: flex-start;
+    }
+    #news > div > img{
+        border-radius: 2px;
+        width: 35%;
+    }
+    #news > div > p{
+        font-size: 4vw;
+    }
+
+    /* copyright */
+    footer > p{
+        grid-row: 5;
+        font-size: 4vw;
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    /* ------------------------------global------------------------------ */
+    h2{
+        font-size: 4vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ------------------------------header------------------------------ */
+    /* top */
+    header{
+        display: grid;
+    }
+    header > *{
+        grid-area: 1 / 1;
+    }
+    #top{
+        width: fit-content;
+        margin-left: 6vw;
+        margin-top: 2vw;
+        gap: 50%;
+    }
+    #top > img{
+        width: 6vw;
+    }
+    #burger{
+        display: none;
+    }
+
+    /* order */
+    #order > p{
+        font-size: 5.8vw;
+    }
+    #order > p > span{
+        font-size: 2vw;
+    }
+    #order > button{
+        font-size: 2vw;
+        border-radius: 4px;
+        padding: 1.5% 4%;
+        margin-top: 45%;
+        margin-left: 10%;
+    }
+
+    /* ------------------------------navigation menu------------------------------ */
+    nav{
+        display: flex !important;
+        justify-content: space-between;
+        gap: 1vw;
+        position: absolute;
+        top: 4vw;
+        left: 20vw;
+        width: 30%;
+    }
+    nav > a{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1.5vw;
+        color: white;
+        cursor: pointer;
+    }
+    .here{
+        color: #e9bd8c !important;
+    }
+
+    /* ------------------------------tops products------------------------------ */
+    .item_text{
+        height: 12vw;
+        margin-top: 60%;
+    }
+    .item_text > img{
+        width: 3vw;
+    }
+    .item_price{
+        font-size: 1.5vw;
+    }
+    .item_name{
+        font-size: 1.5vw;
+    }
+    .add{
+        font-size: 1.5vw;
+        border-radius: 2px;
+        padding: 6% 7%;
+    }
+    #product{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.4fr repeat(2, 1fr);
+        column-gap: 2%;
+        margin-top: 6%;
+    }
+    #product > h2{
+        grid-area: 1 / 1 / 1 / 4;
+        margin-bottom: 8%;
+    }
+    #pat_feuil{
+        width: 70%;
+    }
+    #miche_p_comp{
+        width: 60%;
+    }
+
+    /* ------------------------------event------------------------------ */
+    #event > img{
+        width: 100%;
+    }
+    #event > h2{
+        font-size: 2.5vw;
+        margin-top: 5%;
+        margin-left: 36%;
+        width: 25%;
+    }
+    #event > p{
+        font-size: 1.8vw;
+        margin-top: 15%;
+        margin-left: 35%;
+        width: 28%;
+    }
+    #event > button{
+        padding: 1% 3%;
+        font-size: 1.8vw;
+        margin-top: 25%;
+    }
+
+    /* ------------------------------discover------------------------------ */
+    .switch_img{
+        margin-top: 6%;
+        padding-bottom: 3%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2%;
+        row-gap: 3%;
+    }
+    .switch_img > img{
+        width: 100%;
+        margin: 0;
+    }
+    #switch{
+        width: 70%;
+    }
+    #switch > div > p{
+        font-size: 1.8vw;
+    }
+    #switch > div > div{
+        height: 0.2vw;
+    }
+
+    /* ------------------------------about------------------------------ */
+    #about{
+        margin-top: 6%;
+    }
+    #about > img{
+        width: 100%;
+    }
+    #about > h2{
+        font-size: 4vw !important;
+        margin: 5% auto 0 auto !important;
+    }
+    #about > p{
+        font-size: 1.8vw;
+        margin-top: 13%;
+        width: 27%;
+    }
+    #about > button{
+        padding: 1% 2.5%;
+        font-size: 1.8vw;
+        margin-top: 25%;
+        border-radius: 4px;
+    }
+
+    /* ------------------------------little pleasur------------------------------ */
+    #little_pleasur{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.4fr 1fr;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        column-gap: 2%;
+    }
+    #little_pleasur > h2{
+        grid-area: 1 / 1 / 1 / 4;
+    }
+    #little_pleasur > div > div{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #little_pleasur > div > div > p{
+        font-size: 2vw;
+        margin: 0;
+    }
+
+    /* ------------------------------footer------------------------------ */
+    footer{
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 5vw;
+    }
+    footer > div > h2{
+        margin: 10% 0 6% 0;
+    }
+    footer > div > p{
+        color: white;
+        margin: 0;
+        font-size: 1.8vw;
+    }
+
+    /* logos */
+    #logos{
+        grid-area: 1 / 1 / 1 / 4;
+        margin-top: 2%;
+        padding-bottom: 2%;
+        width: 90%;
+    }
+    #logos > *{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #logos > img{
+        width: 8vw;
+        margin-right: 50%;
+    }
+    #logos > p{
+        font-size: 1.5vw;
+        height: fit-content;
+    }
+    #logos > div{
+        width: 25%;
+        height: fit-content;
+    }
+    #logos > div > a > img{
+        width: 3vw;
+    }
+
+    /* footer about */
+    footer > div > h2{
+        font-size: 2.5vw;
+    }
+
+    /* news */
+    #news > div{
+        gap: 10%;
+        align-items: flex-start;
+    }
+    #news > div > img{
+        border-radius: 2px;
+        width: 30%;
+    }
+    #news > div > p{
+        font-size: 1.8vw;
+    }
+    #news > div > p > span{
+        font-size: 1.4vw;
+    }
+
+    /* copyright */
+    footer > p{
+        grid-area: 3 / 1 / 3 / 4;
+        font-size: 2vw;
+        margin: 10% auto 0 auto;
+    }
+}
+
+/* ------------------------------global------------------------------ */
 body{
     margin: 0;
-}
-header{
-    display: flex;
-    justify-content: space-around;
-    gap: 50%;
-}
-header > img{
-    width: 11%;
-    height: auto;
-}
-nav{
-    position: absolute;
-    right: 4.4vw;
-    top: 11.95vw;
-    z-index: 1;
-    font-size: 0.8rem;
 }
 h2{
     font-family: "Sansita Swashed", system-ui;
     font-weight: 600;
     width: fit-content;
-    margin: 0 auto 8% auto;
-    font-size: 6vw;
+    height: fit-content;
 }
 button{
     cursor: pointer;
@@ -31,23 +514,19 @@ button{
     color: white;
     font-family: "Inter", sans-serif;
 }
+a{
+    width: fit-content;
+    height: fit-content;
+}
 footer{
     display: grid;
-    grid-template-rows: repeat(4, 1fr) 0.25fr;
-    grid-template-columns: 1fr;
-    row-gap: 1%;
     background-image: url("../images/background_footer.jpg");
-    background-size: cover;
 }
 footer > p{
-    grid-row: 5;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 4vw;
     color: #737373;
-    margin: 0 auto;
     text-align: center;
-    width: 50%;
     height: fit-content;
 }
 footer > div{
@@ -57,15 +536,11 @@ footer > div{
 footer > div > h2{
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 6vw;
     color: #e9bd8c;
 }
 footer > div > p{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 4vw;
-    color: white;
-    line-height: 2;
 }
 
 /* class */
@@ -98,54 +573,40 @@ footer > div > p{
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     width: 80%;
-    height: 25vw;
-    margin: 70% auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
 }
 .item_text > img{
     margin: auto;
-    width: 8vw;
     cursor: pointer;
 }
 .item_price{
     font-weight: 600;
-    font-size: 4vw;
 }
 .item_name{
     grid-column: 1;
     grid-row: 2;
-    font-size: 4vw;
+    width: 80%;
 }
 .add{
     grid-column: 2;
     grid-row: 2;
     border: #933c24 solid 1px;
-    border-radius: 4px;
     width: fit-content;
     height: fit-content;
-    padding: 10% 12%;
     margin: auto;
-    font-size: 4vw;
 }
 .switch_img{
-    width: 80%;
-    margin: 0 auto;
-}
-.switch_img > img{
-    width: 100%;
-    height: auto;
-    margin: 5% 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* id */
-#burger{
+#top{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 6.25vw;
-    height: 3.75vw;
-    margin: auto 0;
-    cursor: pointer;
+    height: fit-content;
+    justify-content: space-around;
 }
 #burger > div{
     height: 0.625vw;
@@ -158,59 +619,27 @@ footer > div > p{
 }
 #order > img{
     width: 100%;
-    height: auto;
     z-index: -1;
 }
 #order > p{
     font-family: "Sansita Swashed", system-ui;
-    font-size: 6.5vw;
     color: #ffffff;
     margin-top: 16.5%;
     margin-left: 5.5%;
 }
 #order > p > span{
-    font-family: "Inter", sans-serif !important;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 60% !important;
-    color: #e9bd8c !important;
+    color: #e9bd8c;
 
 }
 #order > button{
     font-weight: 500;
-    font-size: 4vw;
-    border-radius: 8px;
     border: 1px solid black;
     width: fit-content;
     height: fit-content;
-    padding: 1.5% 0.5%;
-    margin-top: 45%;
-    margin-left: 5%;
-}
-#nav_tri{
-    width: 4vw;
-    height: 4vw;
-    background-color: lightgrey;
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-    margin: 0 auto;
-    position: absolute;
-    left: 5vw;
-    top: -25%;
-}
-#nav_menu{
-    background-color: lightgrey;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.52vw;
-    margin: 0 auto;
-}
-#nav_menu > a{
-    display: block;
-    font-size: 4vw;
 }
 #product{
-    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
@@ -228,9 +657,6 @@ footer > div > p{
 }
 #event > img{
     z-index: -1;
-    width: 300%;
-    height: auto;
-    margin-left: -90%;
 }
 #event > h2,
 #event > p,
@@ -241,32 +667,26 @@ footer > div > p{
 #event > h2{
     font-family: "Sansita Swashed", system-ui;
     font-weight: 500;
-    font-size: 6vw;
     color: #933c24;
-    margin: 20% auto 0 auto;
     text-align: center;
 }
 #event > p{
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 4vw;
     color: #5d5d5d;
-    margin: 51.5% auto 0 auto;
-    width: 75%;
     text-align: center;
 }
 #event > button{
     width: fit-content;
     border: 1px solid #933c24;
     border-radius: 6px;
-    padding: 3.5% 7%;
     font-weight: 600;
-    font-size: 3.5vw;
-    margin: 83% auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 #discover{
     width: 90%;
-    margin-top: 10%;
+    height: fit-content;
     margin: 5% auto 0 auto;
 }
 #discover > h2{
@@ -275,15 +695,9 @@ footer > div > p{
 }
 #switch{
     display: flex;
-    overflow: scroll;
     border-bottom: 1px solid #d9d9d9;
     justify-content: space-between;
-    gap: 8%;
-    scrollbar-width: none;
     margin: 0 auto;
-}
-#switch::-webkit-scrollbar{
-    display: none;
 }
 #switch > div{
     width: fit-content;
@@ -293,7 +707,6 @@ footer > div > p{
 #switch > div > p{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 4vw;
     color: #5d5d5d;
     margin: 0;
     cursor: pointer;
@@ -303,60 +716,44 @@ footer > div > p{
     border: 1px solid #933c24;
     border-radius: 20px;
     width: 100%;
-    height: 0.6vw;
 }
 #about{
     display: grid;
-    overflow: hidden;
 }
 #about > *{
     grid-area: 1 / 1;
 }
 #about > img{
     z-index: -1;
-    width: 280%;
-    height: auto;
-    margin-left: -90%;
 }
 #about > h2,
 #about > p,
 #about > button{
     height: fit-content;
-    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 #about > h2{
     font-family: "Sansita Swashed", system-ui;
     font-weight: 600;
-    font-size: 6vw;
     color: white;
-    margin: 10% auto 0 auto;
     text-align: center;
 }
 #about > p{
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 4vw;
     color: #b9b9b9;
-    margin: 42% auto 0 auto;
-    width: 75%;
     text-align: center;
 }
 #about > button{
     width: fit-content;
     border: 1px solid #933c24;
-    border-radius: 6px;
-    padding: 3.5% 7%;
     font-weight: 600;
-    font-size: 3.5vw;
-    margin: 83% auto 0 auto;
 }
 #little_pleasur{
     width: 70%;
-    margin: 5% auto 0 auto;
-}
-#liitle_pleasur > h2{
-    margin: 0 auto;
-    font-size: 4vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 #little_pleasur > div{
     margin-bottom: 4%;
@@ -372,67 +769,30 @@ footer > div > p{
 #little_pleasur > div > div > p{
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 4vw;
 }
 #logos{
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 5% auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 1px solid rgba(233, 189, 141, 0.2);
-    width: 95%;
     height: fit-content;
-}
-#logos > *{
-    margin: 0 auto;
-}
-#logos > img{
-    width: 25vw;
-    height: auto;
-    margin-bottom: 4%;
+    display: flex;
 }
 #logos > p{
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 5vw;
     color: #e9bd8c;
 }
 #logos > div{
-    margin-top: 2%;
-    margin-bottom: 1%;
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
-}
-#logos > div > a > img{
-    width: 9vw;
-    height: auto;
-}
-#f_about{
-    grid-row: 2;
-}
-#explor{
-    grid-row: 3;
-}
-#news{
-    grid-row: 4;
 }
 #news > div{
     display: flex;
-    gap: 10%;
-    margin: 0 auto 8% auto;
     width: 100%;
     height: fit-content;
-    align-items: flex-start;
-}
-#news > div > img{
-    border-radius: 2px;
-    width: 35%;
-    height: auto;
 }
 #news > div > p{
     font-family: "Poppins", sans-serif;
-    font-size: 4vw;
     color: white;
     margin: 0;
 }

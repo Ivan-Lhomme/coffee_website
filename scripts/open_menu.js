@@ -1,3 +1,3 @@
 function open_menu() {
-    document.getElementById("menu").classList.toggle("hidden")
+    document.querySelector("nav").classList.toggle("hidden");
 }

@@ -13,10 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- FONT IMPORT -->
-
-    <script src="./scripts/open_menu.js"></script>
-    <script src="./scripts/discover_switch.js"></script>
 
     
     <title>KEITHSTON - coffee shop</title>
@@ -24,35 +20,35 @@
 
 <body>
     <header>
-        <img src="images/logo.jpg" alt="logo keithston" loading="lazy">
+        <div id="top">
+            <img src="images/logo.svg" alt="logo keithston" loading="lazy">
 
-        <div id="burger" onclick="open_menu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div id="burger" onclick="open_menu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
         
+
+        <div id="order">
+        
+            <img src="./images/background.jpg" alt="background" loading="lazy">
+            <p>
+                <span>Café Délicieux</span><br>
+                Douceurs &<br>
+                Saveurs
+            </p>
+            <button>Commander</button>
+        </div>        
     </header>
 
-    <nav class="hidden" id="menu">
-        <div id="nav_tri"></div>
-        <div id="nav_menu">
-            <a>Acceuil</a>
-            <a>Panier</a>
-            <a>Contact</a>
-        </div>
+    <nav class="hidden">
+        <a class="here">Acceuil</a>
+        <a>Blog</a>
+        <a>Contact</a>
+        <a>Services</a>
     </nav>
-
-    <div id="order">
-        
-        <img src="./images/background.jpg" alt="background" loading="lazy">
-        <p>
-            <span>Café Délicieux</span><br>
-            Douceurs &<br>
-            Saveurs
-        </p>
-        <button>Commander</button>
-    </div>
 
     <section id="product">
         <h2>Nos Tops Produits</h2>
@@ -71,12 +67,12 @@
 
         <div class="item">
             <img src="./images/item_background.jpg" alt="item_background" class="item_background" loading="lazy">
-            <img src="./images/feuilletee.jpg" alt="patisserie feuilletée" class="item_img" loading="lazy">
+            <img src="./images/feuilletee.jpg" alt="patisserie feuilletée" class="item_img" id="pat_feuil" loading="lazy">
 
             <div class="item_text">
                 <p class="item_price">40€</p>
                 <img src="./images/info.svg" alt="icône info">
-                <p class="item_name">Pâtisserie<br>feuilletée</p>
+                <p class="item_name">Pâtisserie feuilletée</p>
                 <button class="add">Ajouter</button>
             </div>
         </div>
@@ -88,7 +84,7 @@
             <div class="item_text">
                 <p class="item_price">40€</p>
                 <img src="./images/info.svg" alt="icône info">
-                <p class="item_name">Baguette de<br>campagne</p>
+                <p class="item_name">Baguette de campagne</p>
                 <button class="add">Ajouter</button>
             </div>
         </div>
@@ -100,7 +96,7 @@
             <div class="item_text">
                 <p class="item_price">40€</p>
                 <img src="./images/info.svg" alt="icône info">
-                <p class="item_name">Miche de pain<br>blanc</p>
+                <p class="item_name">Miche de pain blanc</p>
                 <button class="add">Ajouter</button>
             </div>
         </div>
@@ -112,19 +108,19 @@
             <div class="item_text">
                 <p class="item_price">40€</p>
                 <img src="./images/info.svg" alt="icône info">
-                <p class="item_name">Gâteau pâte<br>feuilletée</p>
+                <p class="item_name">Gâteau pâte feuilletée</p>
                 <button class="add">Ajouter</button>
             </div>
         </div>
 
         <div class="item">
             <img src="./images/item_background.jpg" alt="item_background" class="item_background" loading="lazy">
-            <img src="./images/miche_pain_complet.png" alt="miche de pain complet" class="item_img" loading="lazy">
+            <img src="./images/miche_pain_complet.png" alt="miche de pain complet" class="item_img" id="miche_p_comp" loading="lazy">
 
             <div class="item_text">
                 <p class="item_price">40€</p>
                 <img src="./images/info.svg" alt="icône info">
-                <p class="item_name">Miche de pain<br>complet</p>
+                <p class="item_name">Miche de pain complet</p>
                 <button class="add">Ajouter</button>
             </div>
         </div>
@@ -167,7 +163,7 @@
             </div>
         </div>
 
-        <div class="switch_img" id="g_img">
+        <div id="g_img" class="switch_img">
             <img src="./images/gateau_1.jpg" alt="gateau" loading="lazy">
             <img src="./images/gateau_2.jpg" alt="gateau" loading="lazy">
             <img src="./images/gateau_3.jpg" alt="gateau" loading="lazy">
@@ -264,5 +260,8 @@
 
         <p>© 2025 Coda Bakery. Tous droits réservés.</p>
     </footer>
+
+    <script src="./scripts/open_menu.js"></script>
+    <script src="./scripts/discover_switch.js"></script>
 </body>
 </html>
