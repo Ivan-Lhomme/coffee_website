@@ -50,6 +50,11 @@
         transition: 0.5s ease;
         transform-origin: left;
     }
+    .cross{
+        position: fixed;
+        top: 4.3vw;
+        right: 5.8%;
+    }
     .cross > div:nth-child(1) {
         transform: rotate(45deg) translate(-5%, -150%);
         background-color: lightgray !important;
@@ -65,10 +70,13 @@
     /* ------------------------------header------------------------------ */
     /* top */
     #top{
-        gap: 60%;
+        justify-content: left;
+        width: 90%;
+        margin: 0 auto;
     }
     #top > img{
         width: 11vw;
+        margin-right: 80%;
     }
 
     /* order */
@@ -275,6 +283,7 @@
     }
     #top{
         width: fit-content;
+        justify-content: space-around;
         margin-left: 6vw;
         margin-top: 2vw;
         gap: 50%;
@@ -567,7 +576,6 @@ nav > a{
 #top{
     display: flex;
     height: fit-content;
-    justify-content: space-around;
 }
 
 /* order */
