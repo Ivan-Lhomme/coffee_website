@@ -512,6 +512,14 @@
         width: 3vw;
     }
 
+    /* logos animation */
+    #logos > div > a > img{
+        transition: 0.2s ease;
+    }
+    #logos > div > a > img:hover{
+        transform: scale(1.2);
+    }
+
     /* footer about */
     footer > div > h2{
         font-size: 2.5vw;
