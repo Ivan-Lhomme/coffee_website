@@ -1,18 +1,29 @@
 const switchIdList = ['g', 'm', 'c', 'p', 't'];
 
 function discover_switch(id) {
-    if (document.querySelector(`#${id} div`).hasAttribute("hidden")) {
-        for (const switchId of switchIdList) {
-            const switchLine = document.querySelector(`#${switchId} div`);
-            const switchImges = document.querySelector(`#${switchId}_img`);
+    let currentSwitchBar = document.querySelector(`#${id} div`);
+    let images = document.getElementById(`${id}_img`)
 
-            if (switchId === id) {
-                switchLine.removeAttribute("hidden");
-                if (switchImges) switchImges.removeAttribute("hidden");
-            } else {
-                switchLine.setAttribute("hidden", true);
-                if (switchImges) switchImges.setAttribute("hidden", true);
+    if (!currentSwitchBar.classList.contains("switch-underbar-active")) {
+        for (const switchId of switchIdList) {
+            let switchBar = document.querySelector(`#${switchId} div`);
+            let oldImages = document.getElementById(`${switchId}_img`);
+
+            if (switchBar.classList.contains("switch-underbar-active")) {
+                switchBar.classList.remove("switch-underbar-active");
+
+                if (oldImages) {
+                    oldImages.style.display = "none";
+                }
+                
+                break;
             }
         }
+
+        currentSwitchBar.classList.add("switch-underbar-active");
+        if (images) {
+            images.style.display = "grid";
+        }
+        
     }
 }
