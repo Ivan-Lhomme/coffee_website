@@ -192,17 +192,21 @@
     }
 
     /* ------------------------------footer------------------------------ */
-    footer > div > h2{
-        font-size: 6vw;
-    }
-
-    /* logos */
     footer{
         grid-template-rows: repeat(4, 1fr) 0.25fr;
         grid-template-columns: 1fr;
-        row-gap: 1%;
         background-size: cover;
     }
+    footer > div > h2{
+        font-size: 6vw;
+    }
+    footer > div > p{
+        margin: 0;
+        font-size: 4vw;
+        line-height: 2.5;
+    }
+
+    /* logos */
     #logos{
         grid-column: 1;
         flex-direction: column;
@@ -465,7 +469,6 @@
         margin: 10% 0 6% 0;
     }
     footer > div > p{
-        color: white;
         margin: 0;
         font-size: 1.8vw;
     }
@@ -823,6 +826,7 @@ footer > div > h2{
 footer > div > p{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    color: white;
 }
 
 /* logos */
