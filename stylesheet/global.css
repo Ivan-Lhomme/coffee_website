@@ -6,40 +6,6 @@
         font-size: 6vw;
     }
 
-    /* ------------------------------header------------------------------ */
-    /* top */
-    #top{
-        gap: 60%;
-    }
-    #top > img{
-        width: 11vw;
-    }
-    #burger{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 6.25vw;
-        height: 3.75vw;
-        margin: auto 0;
-        cursor: pointer;
-        z-index: 2;
-    }
-
-    /* order */
-    #order > p{
-        font-size: 6.5vw;
-    }
-    #order > p > span{
-        font-size: 3.5vw;
-    }
-    #order > button{
-        font-size: 4vw;
-        border-radius: 8px;
-        padding: 1.5% 0.5%;
-        margin-top: 45%;
-        margin-left: 5%;
-    }
-
     /* ------------------------------navigatio menu------------------------------ */
     nav{
         background-color: rgba(0, 0, 0, 0.9);
@@ -64,9 +30,60 @@
         margin-top: 22%;
     }
 
+    /* burger button */
+    #burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 6.25vw;
+        height: 3.75vw;
+        margin: auto 0;
+        cursor: pointer;
+        z-index: 2;
+    }
+
     /* animation */
     .nav-open{
         transform: translateX(0);
+    }
+    #burger > div{
+        transition: 0.5s ease;
+        transform-origin: left;
+    }
+    .cross > div:nth-child(1) {
+        transform: rotate(45deg) translate(-5%, -150%);
+        background-color: lightgray !important;
+    }
+    .cross > div:nth-child(2){
+        opacity: 0;
+    }
+    .cross > div:nth-child(3){
+        transform: rotate(-45deg) translateY(80%);
+        background-color: lightgray !important;
+    }
+
+    /* ------------------------------header------------------------------ */
+    /* top */
+    #top{
+        gap: 60%;
+    }
+    #top > img{
+        width: 11vw;
+    }
+
+    /* order */
+    #order > p{
+        font-size: 6.5vw;
+    }
+    #order > p > span{
+        font-size: 3.5vw;
+    }
+    #order > button{
+        font-size: 4vw;
+        border-radius: 8px;
+        padding: 1.5% 0.5%;
+        margin-top: 45%;
+        margin-left: 5%;
     }
 
     /* ------------------------------tops products------------------------------ */
@@ -523,24 +540,8 @@ a{
 .hidden{
     display: none;
 }
-/* ------------------------------discover------------------------------ */
-/* top */
-#top{
-    display: flex;
-    height: fit-content;
-    justify-content: space-around;
-}
 
-/* burger menu */
-.line{
-    height: 2px;
-    background-color: black;
-}
-#burger > div{
-    height: 0.625vw;
-}
-
-/* navigation menu */
+/* ------------------------------navigation menu------------------------------ */
 .here{
     color: #e9bd8c !important;
 }
@@ -552,6 +553,21 @@ nav > a{
     font-weight: 600;
     color: white;
     cursor: pointer;
+}
+
+/* burger menu */
+#burger > div{
+    height: 2px;
+    background-color: black;
+    height: 0.625vw;
+}
+
+/* ------------------------------header------------------------------ */
+/* top */
+#top{
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
 }
 
 /* order */
