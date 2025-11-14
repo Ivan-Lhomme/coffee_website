@@ -327,6 +327,13 @@
     nav > a{
         font-size: 1.5vw;
     }
+    /* animation */
+    nav > a{
+        transition: 0.5s ease;
+    }
+    nav > a:hover{
+        color: #e1bd1c;
+    }
 
     /* ------------------------------tops products------------------------------ */
     .item_text{
