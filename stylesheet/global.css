@@ -22,6 +22,7 @@
         height: 3.75vw;
         margin: auto 0;
         cursor: pointer;
+        z-index: 2;
     }
 
     /* order */
@@ -41,23 +42,31 @@
 
     /* ------------------------------navigatio menu------------------------------ */
     nav{
-        background-color: lightgrey;
-        border: 1px solid lightgrey;
-        border-radius: 5px;
-        width: fit-content;
-        height: fit-content;
-        padding: 0.52vw;
-        margin: 0 auto;
-
-        position: absolute;
-        right: 4.4vw;
-        top: 11.95vw;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
         z-index: 1;
-        font-size: 0.8rem;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        text-align: right;
+        gap: 2vw;
+        transition: transform 0.5s ease;
+        transform: translateX(100%);
     }
     nav > a{
         display: block;
-        font-size: 4vw;
+        font-size: 3vw;
+        margin-left: 10%;
+    }
+    #first_nav_text{
+        margin-top: 22%;
+    }
+
+    /* animation */
+    .nav-open{
+        transform: translateX(0);
     }
 
     /* ------------------------------tops products------------------------------ */
@@ -277,7 +286,7 @@
 
     /* ------------------------------navigation menu------------------------------ */
     nav{
-        display: flex !important;
+        display: flex;
         justify-content: space-between;
         gap: 1vw;
         position: absolute;
@@ -286,14 +295,7 @@
         width: 30%;
     }
     nav > a{
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
         font-size: 1.5vw;
-        color: white;
-        cursor: pointer;
-    }
-    .here{
-        color: #e9bd8c !important;
     }
 
     /* ------------------------------tops products------------------------------ */
@@ -518,39 +520,71 @@ a{
     width: fit-content;
     height: fit-content;
 }
-footer{
-    display: grid;
-    background-image: url("../images/background_footer.jpg");
+.hidden{
+    display: none;
 }
-footer > p{
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: #737373;
-    text-align: center;
+/* ------------------------------discover------------------------------ */
+/* top */
+#top{
+    display: flex;
     height: fit-content;
-}
-footer > div{
-    width: 80%;
-    margin: 0 auto;
-}
-footer > div > h2{
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    color: #e9bd8c;
-}
-footer > div > p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    justify-content: space-around;
 }
 
-/* class */
+/* burger menu */
 .line{
     height: 2px;
     background-color: black;
 }
-.hidden{
-    display: none;
+#burger > div{
+    height: 0.625vw;
 }
+
+/* navigation menu */
+.here{
+    color: #e9bd8c !important;
+}
+nav{
+    display: flex;
+}
+nav > a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+/* order */
+#order{
+    display: grid;
+}
+#order > *{
+    grid-area: 1 / 1;
+}
+#order > img{
+    width: 100%;
+    z-index: -1;
+}
+#order > p{
+    font-family: "Sansita Swashed", system-ui;
+    color: #ffffff;
+    margin-top: 16.5%;
+    margin-left: 5.5%;
+}
+#order > p > span{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #e9bd8c;
+
+}
+#order > button{
+    font-weight: 500;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* ------------------------------products------------------------------ */
 .item{
     font-family: "Inter", sans-serif;
     display: grid;
@@ -597,48 +631,7 @@ footer > div > p{
     height: fit-content;
     margin: auto;
 }
-.switch_img{
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* id */
-#top{
-    display: flex;
-    height: fit-content;
-    justify-content: space-around;
-}
-#burger > div{
-    height: 0.625vw;
-}
-#order{
-    display: grid;
-}
-#order > *{
-    grid-area: 1 / 1;
-}
-#order > img{
-    width: 100%;
-    z-index: -1;
-}
-#order > p{
-    font-family: "Sansita Swashed", system-ui;
-    color: #ffffff;
-    margin-top: 16.5%;
-    margin-left: 5.5%;
-}
-#order > p > span{
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: #e9bd8c;
-
-}
-#order > button{
-    font-weight: 500;
-    border: 1px solid black;
-    width: fit-content;
-    height: fit-content;
-}
 #product{
     margin-left: auto;
     margin-right: auto;
@@ -647,6 +640,11 @@ footer > div > p{
 #pain_campagne{
     width: 80% !important;
 }
+
+/* ----animation---- */
+
+
+/* ------------------------------event------------------------------ */
 #event{
     display: grid;
     margin-top: 7%;
@@ -684,6 +682,13 @@ footer > div > p{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* ------------------------------discover------------------------------ */
+.switch_img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #discover{
     width: 90%;
     height: fit-content;
@@ -693,6 +698,8 @@ footer > div > p{
     font-family: "Sansita Swashed", system-ui;
     font-weight: 600;
 }
+
+/* switch bar */
 #switch{
     display: flex;
     border-bottom: 1px solid #d9d9d9;
@@ -717,6 +724,8 @@ footer > div > p{
     border-radius: 20px;
     width: 100%;
 }
+
+/* ------------------------------about------------------------------ */
 #about{
     display: grid;
 }
@@ -750,6 +759,8 @@ footer > div > p{
     border: 1px solid #933c24;
     font-weight: 600;
 }
+
+/* ------------------------------little pleasur------------------------------ */
 #little_pleasur{
     width: 70%;
     margin-left: auto;
@@ -770,6 +781,27 @@ footer > div > p{
     font-family: "Inter", sans-serif;
     font-weight: 600;
 }
+
+/* ------------------------------footer------------------------------ */
+footer{
+    display: grid;
+    background-image: url("../images/background_footer.jpg");
+}
+footer > div{
+    width: 80%;
+    margin: 0 auto;
+}
+footer > div > h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #e9bd8c;
+}
+footer > div > p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* logos */
 #logos{
     margin-left: auto;
     margin-right: auto;
@@ -786,6 +818,8 @@ footer > div > p{
     display: flex;
     justify-content: space-evenly;
 }
+
+/* news */
 #news > div{
     display: flex;
     width: 100%;
@@ -799,4 +833,13 @@ footer > div > p{
 #news > div > p > span{
     font-weight: normal;
     color: #e9bd8c;
+}
+
+/* copyright */
+footer > p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #737373;
+    text-align: center;
+    height: fit-content;
 }
