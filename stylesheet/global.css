@@ -414,6 +414,12 @@
     }
 
     /* animation */
+    .switch_img > img{
+        transition: 0.4s ease;
+    }
+    .switch_img > img:hover{
+        transform: scale(1.1);
+    }
     #switch > div:hover > div{
         opacity: 0.5;
     }
